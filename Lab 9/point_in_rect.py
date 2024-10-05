@@ -17,7 +17,6 @@ class Main :
         g_code = randint(0,255)
         b_code = randint(0,255)
         if inside_rectangle == True :
-            # self.canvas.create_oval(event.x -5, event.y - 5, event.x + 5, event.y + 5, fill = "black", tags = "oval")
             self.canvas.create_oval(event.x -5, event.y - 5, event.x + 5, event.y + 5, fill = "#%02x%02x%02x" %(r_code, g_code, b_code), tags = "oval")
         else :
             tkinter.messagebox.showwarning("showwarning", "Mouse pointer is not in the rectangle.")

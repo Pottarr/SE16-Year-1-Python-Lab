@@ -16,23 +16,16 @@ class Main :
         self.reset_button.pack()
         
     def increment_num(self) :
-        # self.num = int(self.num) + 1
         self.num += 1
         self.number_display["text"] = self.num
-        # self.number_display.destroy()
-        # self.number_display.pack()
         
     def decrement_num(self) :
         self.num -= 1
         self.number_display["text"] = self.num
-        # self.number_display.destroy()
-        # self.number_display.pack()
         
     def reset_num(self) :
         self.num = 0
         self.number_display["text"] = self.num
-        # self.number_display.destroy()
-        # self.number_display.pack()
         
     def run(self):
         self.root.mainloop()
